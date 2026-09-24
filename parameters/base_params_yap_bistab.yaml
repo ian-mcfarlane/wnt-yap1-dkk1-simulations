@@ -1,0 +1,36 @@
+# Dimensional parameters of the Wnt-DKK1-YAP model
+total_length: 600.0 # um
+
+#— Diffusion —
+D_W: 0.15        # Wnt diffusion (μm^2/s)
+D_D: 0.5         # DKK1 diffusion (μm^2/s)
+
+R_total: 140
+delta_D: 0.001
+delta_W: 2.3e-05
+k1_on: 3.6e-5    # Wnt + LRP -> C (nM^{-1} s^{-1})
+k1_off: 3.3e-4   # C -> Wnt + LRP (s^{-1})
+k2_on: 9.8e-5    # DKK1 + LRP -> DL (nM^{-1} s^{-1})
+k2_off: 2.9e-4   # DL -> DKK1 + LRP (s^{-1})
+k_out0: 0.046    # YAP nuclear export rate (s^{-1})
+
+# YAP bistable submodel parameters
+Y_tot: 1.0
+tau_M: 7.0  # NOTE: this is the timescale of ECM dynamics;
+            # in the paper all parameter values are scaled by this,
+            # but here it is fed in as a parameter
+
+A_sigma: 2.657428394561
+K_sigma_dim: 38.301910568313
+alpha_M: 8.689044942022
+xi_M: 0.869405859963
+n_Y: 11
+xi_D: 0.727881972766
+m_dy: 9
+r_dy: 0.1
+
+p_0_dim: 0.000037833711
+K_div_dim: 1.371247518809
+p_div: 5
+ell_div_dim: 4.341000251471996
+q_div: 4
